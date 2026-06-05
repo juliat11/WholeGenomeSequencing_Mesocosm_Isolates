@@ -1,0 +1,10 @@
+### Append file names to protein names
+    mkdir FAA
+    for i in *.faa
+    do
+    #awk '/>/{sub(">","&"FILENAME"_");sub(/\.faa/,x)}1' $i > $i.faa
+    awk '/^>/{sub(/^>/, ">" FILENAME " "); sub(/\.faa$/, "", FILENAME)}1' "$i" > "$i.faa"
+    mv $i FAA
+    done
+### Merge all the proteins from all your genomes
+cat *.faa > merged_proteins.faa
