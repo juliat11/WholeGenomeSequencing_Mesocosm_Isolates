@@ -11,7 +11,7 @@
 WKDIR="/Users/juliathiffault/Desktop/genes"
 INPUT="$WKDIR/TXT"
 OUTPUT="$WKDIR/Result"
-MERGED="$WKDIR/Merged_Transport_Beta_oxidation_Phenylacetate_Naphthalene_genes_hits.txt"
+MERGED="$WKDIR/Merged_genes_hits.txt"
 
 # Ensure output directory exists
 mkdir -p "$OUTPUT"
