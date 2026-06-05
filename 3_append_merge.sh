@@ -2,7 +2,7 @@
 #===============================================================================
 # Title          : 3_append_merge.sh
 # Description    : Append filename as new column and merge all .with_file.txt into one file
-# Author         : Julius Eyiuche Nweze -> modified by Julia Thiffault
+# Author         : Julia Thiffault, inspired by Julius Eyiuche Nweze
 # Date           : 05/06/2026
 # Version        : v1
 # Usage          : ./3_append_merge.sh
