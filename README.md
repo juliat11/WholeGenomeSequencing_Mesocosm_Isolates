@@ -8,11 +8,13 @@ These scripts were used for bioinformatic analyses of Whole Genome Sequencing da
 
 4. Run the first bash file in your command line. For MAC/UNIX users, it should look like this (and make sure miniconda is deactivated) : bash 1_append_file_name_to_proteins.sh
 
-5. Then, activate MiniConda if you are using it (conda activate), and run the second file to run the Blast search : sh 2_blastp.sh
+*** Please remember to change the working directory for all scripts to your own file path !!!
 
-6. Deactivate MiniConda for the next script and run the third script : bash 3_append_merge.sh
+6. Then, activate MiniConda if you are using it (conda activate), and run the second file to run the Blast search : sh 2_blastp.sh
 
-7. Now, open the txt file in Excel and copy paste the Merged_hits file you juste created in the “Hits” sheet of Code.ods file. The genome and gene columns will be blank for the moment. For the Gene column, copy and paste the Nom column, then search for each individual isolate name (Ex. 68A.faa_) and replace by nothing. For the Genome column, use this function in excel “ =GAUCHE(A2; TROUVE("."; A2) - 1) “.
+7. Deactivate MiniConda for the next script and run the third script : bash 3_append_merge.sh
+
+8. Now, open the txt file in Excel and copy paste the Merged_hits file you juste created in the “Hits” sheet of Code.ods file. The genome and gene columns will be blank for the moment. For the Gene column, copy and paste the Nom column, then search for each individual isolate name (Ex. 68A.faa_) and replace by nothing. For the Genome column, use this function in excel “ =GAUCHE(A2; TROUVE("."; A2) - 1) “.
 The R script will help you merge both sheets from the Code.ods file so each hit will be linked to the Gene. This will be useful to calculate the sum hits for each gene present in each genome. 
 
-8. You'll also be able to manipulate the data in R to fit the iTOL dataset txt files to create a heatmap. Use the fifth file, and make sur to modify the gene names if necessary (FIELD_LABELS). You can also modify the colors and such settings directly in the text file before uploading it to iTOL.
+9. You'll also be able to manipulate the data in R to fit the iTOL dataset txt files to create a heatmap. Use the fifth file, and make sur to modify the gene names if necessary (FIELD_LABELS). You can also modify the colors and such settings directly in the text file before uploading it to iTOL.
